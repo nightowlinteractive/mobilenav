@@ -1,0 +1,143 @@
+/*
+*
+*
+*
+* CSS for Night Owl JS Library
+*
+*
+*
+*/
+
+
+
+/* nightowl.mobilenav.js */
+
+.expand-collapse-nav {
+	background: url(../images/nav-responsive-white.png) no-repeat center center;
+	width:30px;
+	height: 30px;
+	float: left;
+	margin-top:30px;
+}
+
+@media (max-width: 767px) {
+  .nav-responsive {
+  	display:block;
+  	position: fixed!important;
+  	width:100%;
+  	background: #222;
+  	left:0;
+  	top:0;
+  	bottom:auto;
+  	right:auto;
+  	z-index: 1;
+  	margin: 0!important;
+  }
+  
+  .nav-responsive.responsive-top {
+  
+  }
+
+  .nav-responsive.responsive-left {
+  	height:100%;
+  	bottom:0;
+  }
+  
+  /* Since we're using the same markup from
+  the real navigation, we need to override
+  existing navigation styles with responsive
+  nav styles */
+  
+  .nav-responsive li {
+  	width:100%;
+  	margin: 0!important;
+  	padding: 0!important;
+  }
+  
+  .nav-responsive li a {
+  	margin: 0!important;
+  	font-weight: 200;
+  	font-size: 16px;
+  	border-top: 1px solid rgba(255,255,255, .05);
+  	border-bottom: 1px solid rgba(0,0,0, .05);
+  	color: #ccc;
+  }
+  
+  .nav-responsive.responsive-top {
+
+  }
+  
+  .nav-responsive.responsive-top li a {
+  	width:90%!important;
+  	padding:20px 5%!important;
+  }
+
+  .nav-responsive.responsive-left li a {
+  	width:80%!important;
+  	padding: 20px 10%!important;
+  }
+  
+  .nav-responsive li a:focus {
+  	background: #111;
+  	color: #666;
+  }
+  
+  body {
+		position: absolute;
+		width:100%;
+		z-index: 999!important;
+  }
+  
+}
+
+@media (min-width: 768px) {
+	.expand-collapse-nav {
+		display:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*
+* Custom CSS for each project goes here
+*
+*/
+
+
+#header .nav {
+
+}
+
+#header ul li a {
+	margin: 0 10px;
+	font-family: "Lato";
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #999;
+	font-size: 10px;
+	letter-spacing: 0.04em;
+}
+
+  .nav-bar {
+  	position: absolute;
+  	top:150px;
+  	right:0;
+  	left:0;
+		border-top:1px solid #666;
+		padding: 5px 0;
+  }
