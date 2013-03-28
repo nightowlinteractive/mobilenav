@@ -86,6 +86,7 @@
 					open = false;
 				}
 			} else {
+				$('.nav-responsive').attr('style','');			
 				$('body, .nav-responsive').css({top:0,left:0});
 				$('.nav-responsive').removeClass('responsive-'+settings.position);
 				resetnav = true;
